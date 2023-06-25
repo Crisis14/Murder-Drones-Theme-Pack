@@ -30,7 +30,13 @@ A show web series created by GLITCH Productions.
 
 ## What Does This Theme Add?
 
-In Discord App, it will change a couple things: App background, font, user popup background (by clicking on the user's name), user profile background (by clicking of a user's name and clicking the "Profile" button), theme colors, addons for the Discord user status, and the home icon that turns into the Murder Drones skull icon. In Opera GX, it will change things listed here: Discord main font, Discord browser background, Discord color themes, the Opera GX theme on both light and dark with different types of themes if changed, color themes, and the music.
+### Discord
+
+In Discord App, it will change a couple things: App background, font, user popup background (by clicking on the user's name), user profile background (by clicking of a user's name and clicking the "Profile" button), theme colors, addons for the Discord user status, and the home icon that turns into the Murder Drones skull icon. 
+
+### Opera GX
+
+In Opera GX, it will change things listed here: Discord main font, Discord browser background, Discord color themes, the Opera GX theme on both light and dark with different types of themes if changed, color themes, and the music.
 
 ## How To Install Them?
 
