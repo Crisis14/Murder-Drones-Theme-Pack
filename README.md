@@ -46,7 +46,7 @@ Step 1, download [Vencord](https://github.com/Vendicated/Vencord). Step 2, open 
 
 ### Opera GX Browser
 
-Step 1, download the folder of the theme. Step 2, open Opera GX browser and go to the 3d cube/box icon that will say "extensions". Step 3, enable developer mode that will unlock "Load Unpacked" and "Pack Extension". Step 4, locate the folder you just downloaded. Step 5, do not do anything with the folder and do not go inside the folders or clicking on the files or it may not work properly. Now click on the button that says "Open folder" and it should load the entire theme.
+Step 1, download the folder of the theme. Step 2, open Opera GX browser and go to the 3d cube/box icon that will say "extensions". Step 3, enable developer mode that will unlock "Load Unpacked" and "Pack Extension". Step 4, click on the "Load Unpacked" button and locate the folder you just downloaded. Step 5, do not do anything with the folder and do not go inside the folders or clicking on the files or it may not work properly. Now click on the button that says "Open folder" and it should load the entire theme.
 
 ## Credits
 
