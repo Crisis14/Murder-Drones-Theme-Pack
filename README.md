@@ -42,11 +42,13 @@ In Opera GX, it will change things listed here: Discord main font, Discord brows
 
 ### Discord App
 
-Step 1, download [Vencord](https://github.com/Vendicated/Vencord) if in the app or [browser version](https://chrome.google.com/webstore/detail/vencord-web/cbghhgpcnddeihccjmnadmkaejncjndb). Step 2, open Vencord Installer. Step 3, fully quit discord NOT close the window and install Vencord into discord that has a green button says "install". Step 4, if installed successfully, go to settings and go to where it says the "Vencord" heading. Step 5, click on where it says the "Themes" option. This will show an instruction of how to put github raw theme links in it. Step 6, if you followed the instructions correctly, then it will display the custom theme in your Discord app. No nitro required.
+Step 1, download [Vencord](https://github.com/Vendicated/Vencord) if in the app or [browser version](https://chrome.google.com/webstore/detail/vencord-web/cbghhgpcnddeihccjmnadmkaejncjndb). Step 2, open Vencord Installer. Step 3, fully quit discord NOT close the window and install Vencord into discord that has a green button says "install". Step 4, if installed successfully, go to settings and go to where it says the "Vencord" heading. Step 5, click on where it says the "Themes" option. This will show an instruction of how to put github raw theme links in it. Step 6, if you followed the instructions correctly, then it will display the custom theme in your Discord app. No nitro required. You can try to do some other Vencord alternatives also like BetterDiscord, Powercord, etc. I'm saying that Vencord is more faster to install.
 
 ### Opera GX Browser
 
 Step 1, download the folder of the theme. Step 2, open Opera GX browser and go to the 3d cube/box icon that will say "extensions". Step 3, enable developer mode that will unlock "Load Unpacked" and "Pack Extension". Step 4, click on the "Load Unpacked" button and locate the folder you just downloaded. Step 5, do not do anything with the folder and do not go inside the folders or clicking on the files or it may not work properly. Now click on the button that says "Open folder" and it should load the entire theme.
+
+Sadly, it is incompatible for mobile users. I've tested it on my mobile devices and it unforntunately did not display the theme I wanted to install. Get a pc bro or try to attempt to install Vencord mobile alternatives that might take you long.
 
 ## Credits
 
