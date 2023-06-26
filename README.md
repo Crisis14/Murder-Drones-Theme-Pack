@@ -42,7 +42,7 @@ In Opera GX, it will change things listed here: Discord main font, Discord brows
 
 ### Discord App
 
-Step 1, download [Vencord](https://github.com/Vendicated/Vencord). Step 2, open Vencord Installer. Step 3, fully quit discord NOT close the window and install Vencord into discord that has a green button says "install". Step 4, if installed successfully, go to settings and go to where it says the "Vencord" heading. Step 5, click on where it says the "Themes" option. This will show an instruction of how to put github raw theme links in it. Step 6, if you followed the instructions correctly, then it will display the custom theme in your Discord app. No nitro required.
+Step 1, download [Vencord](https://github.com/Vendicated/Vencord) if in the app or [browser version](https://chrome.google.com/webstore/detail/vencord-web/cbghhgpcnddeihccjmnadmkaejncjndb). If on Android (sorry apple users), download the [apk version](https://github.com/Vencord/Android/releases/tag/v1.0.6). Step 2, open Vencord Installer. Step 3, fully quit discord NOT close the window and install Vencord into discord that has a green button says "install". Step 4, if installed successfully, go to settings and go to where it says the "Vencord" heading. Step 5, click on where it says the "Themes" option. This will show an instruction of how to put github raw theme links in it. Step 6, if you followed the instructions correctly, then it will display the custom theme in your Discord app. No nitro required.
 
 ### Opera GX Browser
 
