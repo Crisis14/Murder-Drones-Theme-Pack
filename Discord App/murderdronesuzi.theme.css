@@ -1,104 +1,264 @@
 /**
  * @name MurderDronesUzi
- * @author ClearVision Team
+ * @author Chris14, ContentLTD
  * @version 6.3.0
- * @description Highly customizable and beautiful theme for BetterDiscord.
- * @source https://github.com/ClearVision/ClearVision-v6
- * @website https://clearvision.github.io
- * @invite 7pNUC9C
- * @BDEditor Clear Vision
-*/
+ * @description A discord theme... About Uzi... Bite me :3
+ * @website 
+ */
 
 @import url('https://clearvision.github.io/ClearVision-v6/main.css');
 @import url('https://discordstyles.github.io/RadialStatus/dist/RadialStatus.css');
 
+/* === Root Variables === */
 :root {
   --main-color: #9C27B0;
   --hover-color: #13365D;
   --success-color: #28FF00;
   --danger-color: #FF0000;
   --url-color: #9C27B0;
+
   --background-image: url('https://i.imgur.com/pEc9LEb.jpg');
-  --background-shading: 100%;
-  --background-position: center;
-  --background-size: cover;
+  --background-overlay: rgba(0, 0, 0, 0.6);
   --background-repeat: no-repeat;
+  --background-size: cover;
+  --background-position: center;
   --background-attachment: fixed;
-  --background-brightness: 100%;
-  --background-contrast: 100%;
-  --background-saturation: 100%;
-  --background-grayscale: 0%;
-  --background-invert: 0%;
-  --background-blur: 0px;
-  --background-overlay: rgb(0,0,0,0.6);
+
   --user-popout-image: url('https://i.imgur.com/8wbEp2q.png');
-  --user-popout-position: center;
-  --user-popout-size: cover;
-  --user-popout-repeat: no-repeat;
-  --user-popout-attachment: fixed;
-  --user-popout-brightness: 100%;
-  --user-popout-contrast: 100%;
-  --user-popout-saturation: 100%;
-  --user-popout-grayscale: 0%;
-  --user-popout-invert: 0%;
-  --user-popout-blur: 3px;
   --user-modal-image: url('https://i.imgur.com/6bbNKY0.jpg');
-  --user-modal-position: center;
-  --user-modal-size: cover;
-  --user-modal-repeat: no-repeat;
-  --user-modal-attachment: fixed;
-  --user-modal-brightness: 100%;
-  --user-modal-contrast: 100%;
-  --user-modal-saturation: 100%;
-  --user-modal-grayscale: 0%;
-  --user-modal-invert: 0%;
-  --user-modal-blur: 3px;
+
+  --profile-gradient-primary-color: #1d1d1d !important;
+  --profile-gradient-secondary-color: #1d1d1d !important;
+  --profile-gradient-button-color: rgba(0, 0, 0, 0.6) !important;
+
   --home-icon: url('https://i.imgur.com/QRt1LD1.png');
-  --home-position: center;
   --home-size: 40px;
+  --home-position: center;
+
   --channel-unread: #411919;
-  --channel-color: rgb(81,20,91,1);
-  --muted-color: rgb(59,0,0,1);
+  --channel-color: rgb(81, 20, 91);
+  --muted-color: rgb(59, 0, 0);
+
   --online-color: #43b581;
   --idle-color: #faa61a;
   --dnd-color: #982929;
   --streaming-color: #593695;
   --offline-color: #808080;
-  --main-font: futura pt;
-  --code-font: Avenir;
+
+  --main-font: "FuturaBT-MediumCondensed", "Futura Condensed Medium", "Futura Condensed", "Futura", "American Sans Var", "AmericanSans Var", "American Sans", sans-serif;
+  --code-font: "Futura", "Futura Condensed", sans-serif;
+
   --channels-width: 220px;
   --members-width: 240px;
-  --backdrop-overlay: rgba(0,0,0,0.8);
+
+  --backdrop-overlay: rgba(0, 0, 0, 0.8);
   --backdrop-image: var(--background-image);
-  --backdrop-position: var(--background-position);
-  --backdrop-size: var(--background-size);
-  --backdrop-repeat: var(--background-repeat);
-  --backdrop-attachment: var(--background-attachment);
-  --backdrop-brightness: var(--background-brightness);
-  --backdrop-contrast: var(--background-contrast);
-  --backdrop-saturation: var(--background-saturation);
-  --backdrop-invert: var(--background-invert);
-  --backdrop-grayscale: var(--background-grayscale);
-  --backdrop-sepia: var(--background-sepia);
-  --backdrop-blur: var(--background-blur);
-  --bd-blue: var(--main-color);
-  --bd-blue-hover: var(--hover-color);
-  --bd-blue-active: var(--hover-color);
+  --backdrop-position: center;
+  --backdrop-size: cover;
+  --backdrop-repeat: no-repeat;
+  --backdrop-attachment: fixed;
+  --backdrop-brightness: 100%;
+  --backdrop-contrast: 100%;
+  --backdrop-saturation: 100%;
+  --backdrop-invert: 0%;
+  --backdrop-grayscale: 0%;
+  --backdrop-blur: 0px;
+
+  --rs-avatar-shape: 20%;
+  --rs-phone-visible: block;
   --rs-small-spacing: 2px;
   --rs-medium-spacing: 2px;
   --rs-large-spacing: 2px;
   --rs-small-width: 2px;
   --rs-medium-width: 2px;
   --rs-large-width: 2px;
-  --rs-avatar-shape: 20%;
   --rs-online-color: #43b581;
   --rs-idle-color: #faa61a;
   --rs-dnd-color: #f04747;
   --rs-offline-color: #636b75;
   --rs-streaming-color: #643da7;
-  --rs-phone-visible: block;
+  --custom-theme-text-color: #FFF;
+  --custom-app-border-frame-base: rgba(0, 0, 0, 0.6);
+  --border-subtle: color-mix(in oklab, hsl(240 calc(1*4%) 60.784% /0.12156862745098039) 100%, rgb(0 0 0 / 60%) var(--custom-theme-border-color-amount, var(--custom-theme-base-color-amount, 0%)));
 }
 
-/* Any custom CSS below here */
+/* === Fonts === */
+@font-face {
+  font-family: "FuturaBT-MediumCondensed";
+  src: local("FuturaBT-MediumCondensed");
+}
 
+@font-face {
+  font-family: "American Sans Var";
+  src: local("American Sans Var"), local("AmericanSans Var");
+}
+
+* {
+  font-family: var(--main-font) !important;
+}
+
+/* === Profile Styling === */
+.profile__9c3be, [class*="popout_"] {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), var(--user-modal-image) !important;
+  background-repeat: no-repeat !important;
+  background-color: transparent !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-blend-mode: darken !important;
+}
+[class*="clanTag"] {
+  display: none !important;
+}
+[id^="popout_"] {
+  background-color: rgba(0, 0, 0, 0.6) !important; 
+  backdrop-filter: blur(8px) !important;           
+  color: white !important;                        
+  border: none !important;
+}
+
+
+
+/* === Cleanup & Patching === */
+.profile__9c3be::before,
+.banner__68edb,
+[class*="profileEffects"] {
+  display: none !important;
+}
+.visual-refresh::before {
+  display: none !important;
+}
+[data-list-id="guildsnav"],
+[id^="wrapper_"],
+[id^="guilds_"],
+[aria-label="Servers sidebar"],
+[class*="itemsContainer"],
+[class*="content_"], 
+[class*="customTheme_"],
+[class*="page_"],
+[class*="chat_"],
+[class*="callContainer_"],
+[class*="container_"],
+[class*="app_"],
+[role*="tabpanel"],
+[class*="tabBody__"],
+[class*="content_"],
+.chat_f75fb0,
+.vc-shc-container {
+  background: transparent !important;
+}
+div,
+[class*="icon__"] {
+  color: #b1b0b0 !important;
+}
+
+element.style {
+}
+.base_c48ade .chat_f75fb0 {
+    background: rgba(0, 0, 0, 0);
+}
+[data-list-id="guildsnav"], [id^="wrapper_"], [id^="guilds_"], [aria-label="Servers sidebar"], [class*="itemsContainer"], [class*="content_"], [class*="customTheme_"], [class*="page_"], [class*="chat_"], .chat_f75fb0, .vc-shc-container {
+    background: transparent !important;
+}
+.chat_f75fb0 {
+    flex: 1 1 auto;
+}
+.chat_f75fb0 {
+    display: flex
+;
+    flex-direction: column;
+    min-height: 0;
+    min-width: 0;
+    overflow: hidden;
+    position: relative;
+    --custom-app-dm-chat-input-primary-button-width: 152px;
+    background: var(--background-gradient-chat, var(--background-base-lowest));
+}
+div, [class*="icon__"] {
+    color: #b1b0b0 !important;
+}
+a, button, div, input, label, select, span, strong, textarea {
+    outline: 0;
+}
+a, abbr, acronym, address, applet, big, blockquote, body, caption, cite, code, dd, del, dfn, div, dl, dt, em, fieldset, form, h1, h2, h3, h4, h5, h6, html, iframe, img, ins, kbd, label, legend, li, object, ol, p, pre, q, s, samp, small, span, strike, strong, table, tbody, td, tfoot, th, thead, tr, tt, ul, var {
+    border: 0;
+    font-family: inherit;
+    font-size: 100%;
+    font-style: inherit;
+    font-weight: inherit;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+* {
+    font-family: var(--main-font) !important;
+}
+user agent stylesheet
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+.container_c48ade {
+    display: flex
+;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    --custom-chat-input-margin-bottom: 24px;
+}
+.appMount__51fd7, body {
+    background: var(--background-base-lowest);
+    text-rendering: optimizeLegibility;
+}
+.appMount__51fd7 {
+    color: var(--background-base-lowest);
+    display: flex
+;
+    flex-direction: column;
+    overflow: hidden;
+    position: absolute;
+}
+style attribute {
+    --custom-app-panels-height: 61.59375px;
+    --custom-guild-sidebar-width: 351px;
+}
+body, button, input, select, textarea, ::placeholder {
+    font-family: var(--main-font);
+}
+::placeholder, body, button, input, select, textarea {
+    font-family: var(--font-primary);
+    text-rendering: optimizeLegibility;
+}
+body {
+    background: transparent;
+    font-family: var(--font-primary);
+    line-height: 1;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+style attribute {
+    font-size: 100%;
+    --saturation-factor: 1;
+    --devtools-sidebar-width: 0px;
+}
+@supports (color:color-mix(in lch,red,blue)) {}
+    .custom-theme-background:not(.client-theme-color-picker) {
+      --custom-app-border-frame-base: rgba(0, 0, 0, 0.6);
+      --app-border-frame: color-mix(in oklab, var(--custom-app-border-frame-base) 24%, var(--border-subtle) 100%);
+    }
+[class*="main_"] svg {
+  display: none !important;
+}
+
+/* === Buttons === */
+button[class*="lookFilled"][class*="colorBrand"][class*="primary"] , [class*="buttonChildrenWrapper"], .button, [class*="button"] {
+  background-color: var(--profile-gradient-button-color) !important;
+  color: white !important;
+  border: none !important;
+  backdrop-filter: blur(2px) !important;
+}
 
